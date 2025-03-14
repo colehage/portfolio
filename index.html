@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Portland Trail Blazers</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+<nav class="nav-bar">
+    <div class="nav-container">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">RIPCITY</a>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#gallery-section">Gallery</a></li>
+        </ul>
+
+        <!-- Hamburger Menu (for mobile) -->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+    <div class="grid-container">
+
+        <!-- Header/Banner Section -->
+        <header class="banner-section">
+            <img src="images/portland.png" alt="Rip City Banner" class="banner-image">
+            <div class="banner-content">
+                <h1>Portland Trail Blazers</h1>
+                <p>RIPCITY ARE YOU READY?</p>
+            </div>
+        </header>
+
+        <!-- Introduction Section -->
+        <section class="introduction-section">
+            <h2>Welcome to the Ripcity!</h2>
+            <p>The Portland Trail Blazers are one of the most historic franchises in the NBA. The Portland Trail Blazers were established in 1970 as part of a long effort by the city of Portland to bring an NBA franchise to the people in the city of roses. Look through our page to see why we are the best franchise to support in the NBA.</p>
+            <button class="cta-button" onclick="window.location.href='https://www.espn.com/nba/team/_/name/por/portland-trail-blazers'">
+                Explore More
+            </button>
+        </section>
+
+        <!-- Key Features Section -->
+        <section class="features-section">
+            <h2>Why We Love the Blazers</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <img src="images/blazerschampionship.png" alt="Championship">
+                    <h3>1 NBA Championship</h3>
+                    <p>Despite only 1 championship that we hold, each win is celebrated because of the importance to the people of Portland that this team brings.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="images/damian.png" alt="Splash Brothers Icon">
+                    <h3>Damian Lillard</h3>
+                    <p>Damian Lillard is the single most important player to ever play for the Blazers. "Dame Time", his nickname, was given to Lillard as part of a historic game winning shot.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="images/moda.png" alt="Teamwork Icon">
+                    <h3>Moda Center</h3>
+                    <p>The Blazers play in the Moda Center which was originally named the Rose Quarter. The Moda Center represents Love, Spirit, Heartbreak, and Joy to Blazers fans alike.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Gallery/Examples Section -->
+<section id="gallery-section">
+    <h2>Blazers in Action</h2>
+    <div class="gallery-grid">
+        <!-- Image 1 -->
+        <div class="image-container">
+            <img src="images/dame.png" alt="Damian Lillard shooting a three-pointer">
+            <div class="overlay">Dame Time!</div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="image-container">
+            <img src="images/billwalton.png" alt="Bill Walton Celebrating a win.">
+            <div class="overlay">Legendary Bill Walton</div>
+        </div>
+
+        <!-- Column for Images 3 and 4 -->
+        <div class="column-container">
+            <div class="image-container">
+                <img src="images/youngsters.png" alt="Youngsters in action.">
+                <div class="overlay">Future Stars</div>
+            </div>
+            <div class="image-container">
+                <img src="images/celebration.png" alt="celebration">
+                <div class="overlay">Celebrating Victory</div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Interactive Elements Section -->
+        <section class="interactive-section">
+        <h2>Join Ripcity</h2>
+        <form class="contact-form" onsubmit="showAlert(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+            <div class="form-buttons">
+            <button type="submit">Sign Up</button>
+            <button type="reset">Clear</button> <!-- Reset button -->
+            </div>
+        </form>
+    </section>
+        <script>
+            // JavaScript function to show an alert
+            function showAlert(event) {
+                event.preventDefault(); 
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                alert("Thank you, " + name + ". We have received your email: " + email + ".");
+            }
+        </script>
+
+        <!-- Testimonials/Quotes Section -->
+        <section class="testimonials-section">
+            <h2>What Fans Are Saying</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <p>"The Blazers are the most exciting team to watch in the NBA. Their style of play is unmatched!"</p>
+                    <p>- Chaim Gerber.</p>
+                </div>
+                <div class="testimonial-item">
+                    <p>"I've been a Blazers fan for life. No matter what I will always be a fan."</p>
+                    <p>- Finn Hanrahan</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-Action/Conclusion Section -->
+        <footer class="cta-section">
+            <h2>Stay Connected</h2>
+            <p>Follow us on social media for the latest updates, highlights, and more.</p>
+            <button class="cta-button" onclick="window.open('https://www.instagram.com/trailblazers/?hl=en')">
+                Follow Us
+            </button>
+            <p>&copy; 2025 Portland Trail Blazers. All rights reserved.</p>
+        </footer>
+    </div> 
+</body>
+</html>
